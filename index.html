@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Indira Gundavarapu — Software Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<div class="terminal-hint" id="termHint" onclick="openTerminal()">
+  <span class="th-icon">⌨</span>
+  <span>open terminal</span>
+  <span class="th-kbd">` </span>
+</div>
+
+<!-- Easter Egg Terminal -->
+<div class="et-overlay" id="etOverlay" onclick="handleOverlayClick(event)">
+  <div class="et-window" id="etWindow">
+    <div class="et-titlebar">
+      <div class="et-dot et-close-dot" onclick="closeTerminal()"></div>
+      <span class="et-titlebar-text">indira@portfolio ~ bash</span>
+    </div>
+    <div class="et-body" id="etBody">
+      <span class="et-line output success">Welcome to Indira's portfolio terminal 🚀</span>
+      <span class="et-line output info">Type <span style="color:var(--white)">help</span> to see available commands.</span>
+      <span class="et-line gap"></span>
+    </div>
+    <div class="et-input-row">
+      <span class="et-prompt-label">indira@portfolio:~$</span>
+      <input class="et-input" id="etInput" type="text" autocomplete="off" spellcheck="false" placeholder="type a command...">
+    </div>
+  </div>
+</div>
+
+<nav>
+  <div class="nav-logo" id="navLogo">indira<span>.dev</span></div>
+  <ul class="nav-links">
+    <li><a href="#about">about</a></li>
+    <li><a href="#projects">projects</a></li>
+    <li><a href="#skills">skills</a></li>
+    <li><a href="#contact">contact</a></li>
+  </ul>
+  <div class="status-badge">open to roles</div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-wrap">
+    <div>
+      <div class="hero-eyebrow"><span class="p">~/indira $</span> whoami</div>
+      <h1 class="hero-name" id="heroName"><span class="type-caret" id="typeCaret"></span></h1>
+      <div class="hero-badges">
+        <span class="badge badge-g">Software Engineer</span>
+        <span class="badge badge-c">Full-Stack</span>
+        <span class="badge badge-p">ML Enthusiast</span>
+      </div>
+      <p class="hero-desc">SDE building things end-to-end — from scalable backends and clean APIs to ML pipelines and data-driven products. Currently exploring LLMs and intelligent systems.</p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn btn-primary">./view_projects</a>
+        <a href="#contact" class="btn btn-outline">./get_in_touch</a>
+      </div>
+      <div class="scroll-hint"><div class="scroll-line"></div><span>scroll</span></div>
+    </div>
+
+    <div class="hero-code-block hc" id="parallaxCode">
+      <span class="hc-line"><span class="c"># engineer.py</span></span>
+      <span class="hc-line"><span class="k">class</span> <span style="color:var(--white)">Indira</span>(<span class="f">SDE</span>):</span>
+      <span class="hc-line">&nbsp;</span>
+      <span class="hc-line">&nbsp;&nbsp;stack = {</span>
+      <span class="hc-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="s">"backend"</span>: [<span class="s">"Java"</span>, <span class="s">"Python"</span>],</span>
+      <span class="hc-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="s">"frontend"</span>: [<span class="s">"React"</span>, <span class="s">"TypeScript"</span>],</span>
+      <span class="hc-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="s">"ml"</span>: [<span class="s">"PyTorch"</span>, <span class="s">"HuggingFace"</span>],</span>
+      <span class="hc-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="s">"db"</span>: [<span class="s">"Postgres"</span>, <span class="s">"Redis"</span>],</span>
+      <span class="hc-line">&nbsp;&nbsp;}</span>
+      <span class="hc-line">&nbsp;</span>
+      <span class="hc-line">&nbsp;&nbsp;<span class="k">def</span> <span class="f">build</span>(self, idea):</span>
+      <span class="hc-line">&nbsp;&nbsp;&nbsp;&nbsp;plan = self.<span class="f">architect</span>(idea)</span>
+      <span class="hc-line">&nbsp;&nbsp;&nbsp;&nbsp;code = self.<span class="f">implement</span>(plan)</span>
+      <span class="hc-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="k">return</span> self.<span class="f">ship</span>(code)</span>
+      <span class="hc-line">&nbsp;</span>
+      <span class="hc-line">&nbsp;&nbsp;currently = <span class="s">"training LLM 🤖"</span></span>
+      <span class="hc-line">&nbsp;&nbsp;coffee_level = <span class="n">∞</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="sec-wrap">
+    <div class="sec-header reveal"><span class="sec-num">01.</span><h2 class="sec-title">about_me</h2><div class="sec-line"></div></div>
+    <div class="about-grid">
+      <div class="about-body reveal">
+        <p>I'm a <span class="hl">Software Development Engineer</span> who loves shipping products that actually work — resilient backends, clean APIs, and UIs people enjoy using.</p>
+        <p>Outside of my SDE role, I'm drawn to <span class="hlp">machine learning</span> — particularly LLMs, fine-tuning, and making models genuinely useful in production. I believe ML engineering is mostly <span class="hl">software engineering</span> with different failure modes.</p>
+        <p>I build full-stack side projects to stay sharp across the whole stack — <span class="hlc">React frontends</span>, <span class="hlc">FastAPI / Node backends</span>, <span class="hlc">PostgreSQL & Redis</span>, all on free tiers. Currently training an <span class="hl">LLM from scratch</span>.</p>
+        <p>I care about <span class="hl">code quality, clean architecture,</span> and building software that outlasts the sprint it was written in.</p>
+        <a href="#contact" class="btn btn-outline" style="display:inline-block;margin-top:1.2rem;">say hello →</a>
+        <div class="terminal-card">
+          <div class="tc-head"><div class="dot dot-r"></div><div class="dot dot-y"></div><div class="dot dot-g"></div><span class="tc-file">indira.json</span></div>
+          <div class="tc-body">
+            <span class="tl"><span class="c">{</span></span>
+            <span class="tl">&nbsp;&nbsp;<span class="v">"role"</span>: <span class="s">"Software Development Engineer"</span>,</span>
+            <span class="tl">&nbsp;&nbsp;<span class="v">"domains"</span>: [<span class="s">"full-stack"</span>, <span class="s">"backend"</span>, <span class="s">"ML"</span>],</span>
+            <span class="tl">&nbsp;&nbsp;<span class="v">"building"</span>: <span class="s">"a custom LLM from scratch 🤖"</span>,</span>
+            <span class="tl">&nbsp;&nbsp;<span class="v">"open_to"</span>: <span class="s">"SDE / MLE roles &amp; collabs"</span>,</span>
+            <span class="tl">&nbsp;&nbsp;<span class="v">"superpower"</span>: <span class="s">"ships end-to-end"</span></span>
+            <span class="tl"><span class="c">}</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="quick-stats reveal">
+        <div class="stat-box"><div class="stat-num">3+</div><div class="stat-label">Full-Stack Projects</div></div>
+        <div class="stat-box"><div class="stat-num">2+</div><div class="stat-label">ML / AI Projects</div></div>
+        <div class="stat-box"><div class="stat-num">1</div><div class="stat-label">LLM in progress</div></div>
+        <div class="stat-box"><div class="stat-num" style="color:var(--cyan)">∞</div><div class="stat-label">Curiosity</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="sec-wrap">
+    <div class="sec-header reveal"><span class="sec-num">02.</span><h2 class="sec-title">projects</h2><div class="sec-line"></div></div>
+    <p style="font-size:0.72rem;color:var(--muted);margin-top:-2.5rem;margin-bottom:2.5rem;" class="reveal">// filter by type</p>
+    <div class="proj-filter reveal">
+      <button class="proj-btn active" onclick="filterProjects('all',this)">all</button>
+      <button class="proj-btn" onclick="filterProjects('fs',this)">full-stack</button>
+      <button class="proj-btn" onclick="filterProjects('ml',this)">ML / AI</button>
+      <button class="proj-btn" onclick="filterProjects('llm',this)">LLM ✦</button>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card reveal" data-cat="fs">
+        <div class="pc-top"><div class="pc-icon">📋</div><span class="pc-badge pb-fs">Full-Stack</span></div>
+        <div class="pc-name">DevPulse — Issue Tracker</div>
+        <div class="pc-desc">Lightweight Jira-alternative with Kanban boards, ticket assignments, real-time status updates via WebSockets, and label-based filtering. JWT auth with role-based access.</div>
+        <div class="pc-tags"><span class="tag tag-g">React</span><span class="tag tag-c">FastAPI</span><span class="tag tag-c">PostgreSQL</span><span class="tag tag-o">WebSockets</span><span class="tag tag-g">JWT</span></div>
+        <div class="pc-footer"><div class="free-chips"><span class="free-chip">Vercel</span><span class="free-chip">Render</span><span class="free-chip">Supabase</span></div><div class="pc-links"><a href="#" class="pc-link">GitHub</a><a href="#" class="pc-link">Live</a></div></div>
+      </div>
+      <div class="project-card reveal" data-cat="fs">
+        <div class="pc-top"><div class="pc-icon">💸</div><span class="pc-badge pb-fs">Full-Stack</span></div>
+        <div class="pc-name">SpendWise — Budget Tracker</div>
+        <div class="pc-desc">Personal finance app with income/expense logging, category charts, monthly trend analysis, CSV import, and recurring transactions. Chart.js visualizations.</div>
+        <div class="pc-tags"><span class="tag tag-g">Next.js</span><span class="tag tag-c">Express</span><span class="tag tag-c">PostgreSQL</span><span class="tag tag-g">Chart.js</span><span class="tag tag-o">JWT</span></div>
+        <div class="pc-footer"><div class="free-chips"><span class="free-chip">Vercel</span><span class="free-chip">Railway</span></div><div class="pc-links"><a href="#" class="pc-link">GitHub</a><a href="#" class="pc-link">Live</a></div></div>
+      </div>
+      <div class="project-card reveal" data-cat="fs">
+        <div class="pc-top"><div class="pc-icon">📚</div><span class="pc-badge pb-fs">Full-Stack</span></div>
+        <div class="pc-name">CoRead — Book Club App</div>
+        <div class="pc-desc">Collaborative reading platform — users join clubs, track progress, post highlights and notes, and discuss chapters in real-time. Redis-backed sessions, Google OAuth.</div>
+        <div class="pc-tags"><span class="tag tag-g">React</span><span class="tag tag-c">FastAPI</span><span class="tag tag-c">PostgreSQL</span><span class="tag tag-o">Redis</span><span class="tag tag-g">OAuth 2.0</span></div>
+        <div class="pc-footer"><div class="free-chips"><span class="free-chip">Vercel</span><span class="free-chip">Render</span><span class="free-chip">Supabase</span><span class="free-chip">Upstash</span></div><div class="pc-links"><a href="#" class="pc-link">GitHub</a><a href="#" class="pc-link">Live</a></div></div>
+      </div>
+      <div class="project-card ml-card reveal" data-cat="ml">
+        <div class="pc-top"><div class="pc-icon">🎯</div><span class="pc-badge pb-ml">ML + Full-Stack</span></div>
+        <div class="pc-name">SmartResume — JD Matcher</div>
+        <div class="pc-desc">Upload a resume + job description — computes semantic similarity, highlights skill gaps, and returns a match score. Sentence-transformers + FAISS vector search.</div>
+        <div class="pc-tags"><span class="tag tag-p">sentence-transformers</span><span class="tag tag-p">FAISS</span><span class="tag tag-c">FastAPI</span><span class="tag tag-g">React</span></div>
+        <div class="pc-footer"><div class="free-chips"><span class="free-chip">HuggingFace Spaces</span><span class="free-chip">Vercel</span></div><div class="pc-links"><a href="#" class="pc-link ml">GitHub</a><a href="#" class="pc-link ml">Demo</a></div></div>
+      </div>
+      <div class="project-card ml-card reveal" data-cat="ml">
+        <div class="pc-top"><div class="pc-icon">📡</div><span class="pc-badge pb-ml">ML + Full-Stack</span></div>
+        <div class="pc-name">SentimentStream — Live NLP</div>
+        <div class="pc-desc">Real-time sentiment analysis dashboard. Type text and watch predictions stream live with token-level attribution. Fine-tuned DistilBERT + FastAPI SSE streaming.</div>
+        <div class="pc-tags"><span class="tag tag-p">PyTorch</span><span class="tag tag-p">DistilBERT</span><span class="tag tag-p">Fine-tuning</span><span class="tag tag-o">SSE</span><span class="tag tag-g">React</span></div>
+        <div class="pc-footer"><div class="free-chips"><span class="free-chip">HuggingFace Spaces</span><span class="free-chip">Render</span></div><div class="pc-links"><a href="#" class="pc-link ml">GitHub</a><a href="#" class="pc-link ml">Demo</a></div></div>
+      </div>
+      <div class="project-card ml-card reveal" data-cat="llm" style="border-color:rgba(167,139,250,0.25);border-style:dashed;">
+        <div class="pc-top"><div class="pc-icon">🤖</div><span class="pc-badge pb-wip">In Progress</span></div>
+        <div class="pc-name" style="color:var(--purple)">Custom LLM — From Scratch</div>
+        <div class="pc-desc">Building a transformer-based LLM from the ground up — custom BPE tokenizer, multi-head self-attention, positional encodings, and full PyTorch training loop on domain-specific corpora.</div>
+        <div class="pc-tags"><span class="tag tag-p">Transformers</span><span class="tag tag-p">PyTorch</span><span class="tag tag-p">BPE Tokenizer</span><span class="tag tag-p">Attention</span><span class="tag tag-o">In Progress</span></div>
+        <div class="pc-footer" style="border-color:rgba(167,139,250,0.2)"><div style="font-size:0.67rem;color:var(--purple);letter-spacing:0.06em;">// details dropping soon ✦</div><a href="#" class="pc-link ml">GitHub</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="sec-wrap">
+    <div class="sec-header reveal"><span class="sec-num">03.</span><h2 class="sec-title">skills</h2><div class="sec-line"></div></div>
+    <div class="skills-layout">
+      <div class="skills-intro reveal"><p>Comfortable across the full stack — Python ML pipelines, React UIs, Postgres databases, and everything in between.</p></div>
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <div class="sg-title">Languages</div>
+          <div class="lang-pie-wrap" id="langPieWrap"></div>
+        </div>
+        <div class="skill-group reveal">
+          <div class="sg-title">ML / AI</div>
+          <div class="lang-pie-wrap" id="mlPieWrap"></div>
+        </div>
+        <div class="skill-group reveal">
+          <div class="sg-title">Backend & APIs</div>
+          <div class="lang-pie-wrap" id="backendPieWrap"></div>
+        </div>
+        <div class="skill-group reveal">
+          <div class="sg-title">Frontend & Infra</div>
+          <div class="lang-pie-wrap" id="frontendPieWrap"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="sec-wrap">
+    <div class="sec-header reveal"><span class="sec-num">04.</span><h2 class="sec-title">contact</h2><div class="sec-line"></div></div>
+    <div class="contact-grid">
+      <div class="contact-left reveal">
+        <p>I'm an SDE actively exploring new roles — backend engineering, full-stack, or the ML-systems intersection. I love collaborating on projects with interesting problems.</p>
+        <p>Have a role, an idea, or just want to geek out about transformers? I'd love to hear from you.</p>
+        <div class="contact-links">
+          <a href="mailto:gundavarapuindira25@gmail.com" class="contact-link"><span class="cl-icon">✉</span>gundavarapuindira25@gmail.com</a>
+          <a href="https://github.com/gundavarapuindira25-max" target="_blank" class="contact-link"><span class="cl-icon">⌥</span>github.com/gundavarapuindira25-max</a>
+          <!-- <a href="https://linkedin.com/in/indira-gundavarapu" target="_blank" class="contact-link"><span class="cl-icon">⊞</span>linkedin.com/in/indira-gundavarapu</a> -->
+          <a href="https://docs.google.com/document/d/1euBbT9YUSb5j9g7bJZGgqjT3HyPFWTuG/export?format=pdf" target="_blank" class="contact-link"><span class="cl-icon">↓</span>Download Resume</a>
+        </div>
+      </div>
+      <div class="contact-form reveal">
+        <div class="form-group"><label class="form-label">// name</label><input id="contactName" name="name" type="text" class="form-input" placeholder="Your Name"></div>
+        <div class="form-group"><label class="form-label">// email</label><input id="contactEmail" name="email" type="email" class="form-input" placeholder="you@example.com"></div>
+        <div class="form-group"><label class="form-label">// message</label><textarea id="contactMsg" name="message" class="form-textarea" placeholder="Tell me about the role / idea..."></textarea></div>
+        <button class="btn btn-primary" onclick="sendMsg(this)" style="width:100%;cursor:inherit;">send_message()</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>// built by <a href="#">Indira Gundavarapu</a> — 2025</div>
+  <div style="color:var(--dim)">crafted with <svg class="coffee-svg" viewBox="0 0 20 22" width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path class="st st1" d="M7 8 Q6 6 7 4 Q8 2 7 0.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+    <path class="st st2" d="M10 8 Q9 6 10 4 Q11 2 10 0.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+    <path class="st st3" d="M13 8 Q12 6 13 4 Q14 2 13 0.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+    <path d="M3 9 L15 9 L14 19 Q14 20 13 20 L5 20 Q4 20 4 19 Z" fill="currentColor" opacity="0.75"/>
+    <path d="M15 12 Q19 12 19 15 Q19 18 15 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    <rect x="1" y="20" width="16" height="1.5" rx="0.75" fill="currentColor" opacity="0.5"/>
+  </svg> &amp; curiosity</div>
+</footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
