@@ -1,6 +1,6 @@
 # Indira Gundavarapu — Portfolio
 
-Personal portfolio website for Indira Gundavarapu, Software Development Engineer.
+Personal portfolio website.
 
 **Live site:** https://gundavarapuindira25-max.github.io/my-portfolio
 
@@ -8,7 +8,7 @@ Personal portfolio website for Indira Gundavarapu, Software Development Engineer
 
 ## About
 
-A dark-themed, terminal-inspired portfolio built with vanilla HTML, CSS, and JavaScript. No frameworks, no build tools — just fast, hand-crafted front-end code.
+A portfolio built with vanilla HTML, CSS, and JavaScript. No frameworks, no build tools, just fast, hand-crafted front-end code.
 
 ## Features
 
