@@ -56,7 +56,7 @@ npx serve .
 
 ## Deployment
 
-Hosted on GitHub Pages from the `main` branch. Push changes and the site updates automatically.
+Hosted on GitHub Pages.
 
 ---
 
