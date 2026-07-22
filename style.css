@@ -187,7 +187,7 @@
   .free-chips{display:flex;flex-wrap:wrap;gap:0.3rem}
   .free-chip{font-size:0.6rem;color:var(--cyan);border:1px solid rgba(56,189,248,0.2);padding:0.1rem 0.45rem}
   .pc-links{display:flex;gap:0.5rem}
-  .pc-link{font-size:0.68rem;color:var(--muted);text-decoration:none;border:1px solid var(--dim);padding:0.2rem 0.55rem;transition:all 0.2s;cursor:inherit}
+  .pc-link{font-size:0.68rem;color:var(--green);text-decoration:none;border:1px solid var(--green);padding:0.2rem 0.55rem;transition:all 0.2s;cursor:inherit}
   .pc-link:hover{color:var(--green);border-color:var(--green)}
   .pc-link.ml:hover{color:var(--purple);border-color:var(--purple)}
 
