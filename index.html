@@ -115,8 +115,7 @@
         </div>
       </div>
       <div class="quick-stats reveal">
-        <div class="stat-box"><div class="stat-num">3+</div><div class="stat-label">Full-Stack Projects</div></div>
-        <div class="stat-box"><div class="stat-num">2+</div><div class="stat-label">ML / AI Projects</div></div>
+        <div class="stat-box"><div class="stat-num">3</div><div class="stat-label">Full-Stack Projects</div></div>
         <div class="stat-box"><div class="stat-num">1</div><div class="stat-label">LLM in progress</div></div>
         <div class="stat-box"><div class="stat-num" style="color:var(--cyan)">∞</div><div class="stat-label">Curiosity</div></div>
       </div>
@@ -132,10 +131,11 @@
     <div class="proj-filter reveal">
       <button class="proj-btn active" onclick="filterProjects('all',this)">all</button>
       <button class="proj-btn" onclick="filterProjects('fs',this)">full-stack</button>
-      <button class="proj-btn" onclick="filterProjects('ml',this)">ML / AI</button>
+      <!-- Hidden: no ML/AI cards currently have a repo link -->
       <button class="proj-btn" onclick="filterProjects('llm',this)">LLM ✦</button>
     </div>
     <div class="projects-grid">
+      <!-- Hidden: no GitHub repo link yet
       <div class="project-card reveal" data-cat="fs">
         <div class="pc-top"><div class="pc-icon">📋</div><span class="pc-badge pb-fs">Full-Stack</span></div>
         <div class="pc-name">DevPulse — Issue Tracker</div>
@@ -143,12 +143,22 @@
         <div class="pc-tags"><span class="tag tag-g">React</span><span class="tag tag-c">FastAPI</span><span class="tag tag-c">PostgreSQL</span><span class="tag tag-o">WebSockets</span><span class="tag tag-g">JWT</span></div>
         <div class="pc-footer"><div class="free-chips"><span class="free-chip">Vercel</span><span class="free-chip">Render</span><span class="free-chip">Supabase</span></div><div class="pc-links"><a href="#" class="pc-link">GitHub</a></div></div>
       </div>
+      -->
+      <!-- Hidden: no GitHub repo link yet
       <div class="project-card reveal" data-cat="fs">
         <div class="pc-top"><div class="pc-icon">💸</div><span class="pc-badge pb-fs">Full-Stack</span></div>
         <div class="pc-name">SpendWise — Budget Tracker</div>
         <div class="pc-desc">Personal finance app with income/expense logging, category charts, monthly trend analysis, CSV import, and recurring transactions. Chart.js visualizations.</div>
         <div class="pc-tags"><span class="tag tag-g">Next.js</span><span class="tag tag-c">Express</span><span class="tag tag-c">PostgreSQL</span><span class="tag tag-g">Chart.js</span><span class="tag tag-o">JWT</span></div>
         <div class="pc-footer"><div class="free-chips"><span class="free-chip">Vercel</span><span class="free-chip">Railway</span></div><div class="pc-links"><a href="#" class="pc-link">GitHub</a></div></div>
+      </div>
+      -->
+      <div class="project-card reveal" data-cat="fs">
+        <div class="pc-top"><div class="pc-icon">📈</div><span class="pc-badge pb-fs">Full-Stack</span></div>
+        <div class="pc-name">MarketPulse — Live Order Book Visualizer</div>
+        <div class="pc-desc">Real-time BTC-USD order book and price chart streaming from the Coinbase Advanced Trade WebSocket API. FastAPI backend fans out live bid/ask depth, trade tape, and 1-min OHLCV candles (persisted to SQLite) to all connected browser clients with sub-100ms latency.</div>
+        <div class="pc-tags"><span class="tag tag-g">React</span><span class="tag tag-c">FastAPI</span><span class="tag tag-o">WebSockets</span><span class="tag tag-g">Recharts</span><span class="tag tag-c">SQLite</span></div>
+        <div class="pc-footer"><div class="free-chips"><span class="free-chip">Vite</span><span class="free-chip">Uvicorn</span></div><div class="pc-links"><a href="https://github.com/gundavarapuindira25-max/marketpulse" class="pc-link" target="_blank" rel="noopener noreferrer">GitHub</a></div></div>
       </div>
       <div class="project-card reveal" data-cat="fs">
         <div class="pc-top"><div class="pc-icon">🤖</div><span class="pc-badge pb-fs">Bot</span></div>
@@ -164,6 +174,7 @@
         <div class="pc-tags"><span class="tag tag-g">React</span><span class="tag tag-c">FastAPI</span><span class="tag tag-c">PostgreSQL</span><span class="tag tag-o">Redis</span><span class="tag tag-g">OAuth 2.0</span></div>
         <div class="pc-footer"><div class="free-chips"><span class="free-chip">Vercel</span><span class="free-chip">Render</span><span class="free-chip">Supabase</span><span class="free-chip">Upstash</span></div><div class="pc-links"><a href="https://github.com/gundavarapuindira25-max/coRead" class="pc-link" target="_blank" rel="noopener noreferrer">GitHub</a></div></div>
       </div>
+      <!-- Hidden: no GitHub repo link yet
       <div class="project-card ml-card reveal" data-cat="ml">
         <div class="pc-top"><div class="pc-icon">🎯</div><span class="pc-badge pb-ml">ML + Full-Stack</span></div>
         <div class="pc-name">SmartResume — JD Matcher</div>
@@ -171,6 +182,8 @@
         <div class="pc-tags"><span class="tag tag-p">sentence-transformers</span><span class="tag tag-p">FAISS</span><span class="tag tag-c">FastAPI</span><span class="tag tag-g">React</span></div>
         <div class="pc-footer"><div class="free-chips"><span class="free-chip">HuggingFace Spaces</span><span class="free-chip">Vercel</span></div><div class="pc-links"><a href="#" class="pc-link ml">GitHub</a></div></div>
       </div>
+      -->
+      <!-- Hidden: no GitHub repo link yet
       <div class="project-card ml-card reveal" data-cat="ml">
         <div class="pc-top"><div class="pc-icon">📡</div><span class="pc-badge pb-ml">ML + Full-Stack</span></div>
         <div class="pc-name">SentimentStream — Live NLP</div>
@@ -178,6 +191,7 @@
         <div class="pc-tags"><span class="tag tag-p">PyTorch</span><span class="tag tag-p">DistilBERT</span><span class="tag tag-p">Fine-tuning</span><span class="tag tag-o">SSE</span><span class="tag tag-g">React</span></div>
         <div class="pc-footer"><div class="free-chips"><span class="free-chip">HuggingFace Spaces</span><span class="free-chip">Render</span></div><div class="pc-links"><a href="#" class="pc-link ml">GitHub</a></div></div>
       </div>
+      -->
       <div class="project-card ml-card reveal" data-cat="llm" style="border-color:rgba(167,139,250,0.25);border-style:dashed;">
         <div class="pc-top"><div class="pc-icon">🤖</div><span class="pc-badge pb-wip">In Progress</span></div>
         <div class="pc-name" style="color:var(--purple)">Custom LLM — From Scratch</div>
