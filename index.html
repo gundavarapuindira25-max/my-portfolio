@@ -84,7 +84,7 @@
       <span class="hc-line">&nbsp;&nbsp;&nbsp;&nbsp;code = self.<span class="f">implement</span>(plan)</span>
       <span class="hc-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="k">return</span> self.<span class="f">ship</span>(code)</span>
       <span class="hc-line">&nbsp;</span>
-      <span class="hc-line">&nbsp;&nbsp;currently = <span class="s">"training LLM 🤖"</span></span>
+      <span class="hc-line">&nbsp;&nbsp;currently = <span class="s">"shipping LLM-powered apps 🤖"</span></span>
       <span class="hc-line">&nbsp;&nbsp;coffee_level = <span class="n">∞</span></span>
     </div>
   </div>
@@ -98,7 +98,7 @@
       <div class="about-body reveal">
         <p>I'm a <span class="hl">Software Development Engineer</span> who loves shipping products that actually work — resilient backends, clean APIs, and UIs people enjoy using.</p>
         <p>Outside of my SDE role, I'm drawn to <span class="hlp">machine learning</span> — particularly LLMs, fine-tuning, and making models genuinely useful in production. I believe ML engineering is mostly <span class="hl">software engineering</span> with different failure modes.</p>
-        <p>I build full-stack side projects to stay sharp across the whole stack — <span class="hlc">React frontends</span>, <span class="hlc">FastAPI / Node backends</span>, <span class="hlc">PostgreSQL & Redis</span>, all on free tiers. Currently training an <span class="hl">LLM from scratch</span>.</p>
+        <p>I build full-stack side projects to stay sharp across the whole stack — <span class="hlc">React frontends</span>, <span class="hlc">FastAPI / Node backends</span>, <span class="hlc">PostgreSQL & Redis</span>, all on free tiers. Recently shipped <span class="hl">LLM-powered apps</span> running on local models, with a focus on grounding output against real data.</p>
         <p>I care about <span class="hl">code quality, clean architecture,</span> and building software that outlasts the sprint it was written in.</p>
         <a href="#contact" class="btn btn-outline" style="display:inline-block;margin-top:1.2rem;">say hello →</a>
         <div class="terminal-card">
@@ -107,7 +107,7 @@
             <span class="tl"><span class="c">{</span></span>
             <span class="tl">&nbsp;&nbsp;<span class="v">"role"</span>: <span class="s">"Software Development Engineer"</span>,</span>
             <span class="tl">&nbsp;&nbsp;<span class="v">"domains"</span>: [<span class="s">"full-stack"</span>, <span class="s">"backend"</span>, <span class="s">"ML"</span>],</span>
-            <span class="tl">&nbsp;&nbsp;<span class="v">"building"</span>: <span class="s">"a custom LLM from scratch 🤖"</span>,</span>
+            <span class="tl">&nbsp;&nbsp;<span class="v">"building"</span>: <span class="s">"LLM-powered apps 🤖"</span>,</span>
             <span class="tl">&nbsp;&nbsp;<span class="v">"open_to"</span>: <span class="s">"SDE / MLE roles &amp; collabs"</span>,</span>
             <span class="tl">&nbsp;&nbsp;<span class="v">"superpower"</span>: <span class="s">"ships end-to-end"</span></span>
             <span class="tl"><span class="c">}</span></span>
@@ -116,7 +116,7 @@
       </div>
       <div class="quick-stats reveal">
         <div class="stat-box"><div class="stat-num">3</div><div class="stat-label">Full-Stack Projects</div></div>
-        <div class="stat-box"><div class="stat-num">1</div><div class="stat-label">LLM in progress</div></div>
+        <div class="stat-box"><div class="stat-num">2</div><div class="stat-label">LLM Projects</div></div>
         <div class="stat-box"><div class="stat-num" style="color:var(--cyan)">∞</div><div class="stat-label">Curiosity</div></div>
       </div>
     </div>
@@ -156,8 +156,8 @@
       <div class="project-card reveal" data-cat="fs">
         <div class="pc-top"><div class="pc-icon">📈</div><span class="pc-badge pb-fs">Full-Stack</span></div>
         <div class="pc-name">MarketPulse — Live Order Book Visualizer</div>
-        <div class="pc-desc">Real-time BTC-USD order book and price chart streaming from the Coinbase Advanced Trade WebSocket API. FastAPI backend fans out live bid/ask depth, trade tape, and 1-min OHLCV candles (persisted to SQLite) to all connected browser clients with sub-100ms latency.</div>
-        <div class="pc-tags"><span class="tag tag-g">React</span><span class="tag tag-c">FastAPI</span><span class="tag tag-o">WebSockets</span><span class="tag tag-g">Recharts</span><span class="tag tag-c">SQLite</span></div>
+        <div class="pc-desc">Real-time BTC-USD order book and price chart streaming from the Coinbase Advanced Trade WebSocket API. FastAPI backend fans out live bid/ask depth, trade tape, and 1-min OHLCV candles (persisted to SQLite) to all connected browser clients with sub-100ms latency. A local LLM narrates the market in plain English every 45s, with every stated number cross-checked against the real data before it's shown.</div>
+        <div class="pc-tags"><span class="tag tag-g">React</span><span class="tag tag-c">FastAPI</span><span class="tag tag-o">WebSockets</span><span class="tag tag-g">Recharts</span><span class="tag tag-c">SQLite</span><span class="tag tag-p">Ollama</span></div>
         <div class="pc-footer"><div class="free-chips"><span class="free-chip">Vite</span><span class="free-chip">Uvicorn</span></div><div class="pc-links"><a href="https://github.com/gundavarapuindira25-max/marketpulse" class="pc-link" target="_blank" rel="noopener noreferrer">GitHub</a></div></div>
       </div>
       <div class="project-card reveal" data-cat="fs">
@@ -192,12 +192,12 @@
         <div class="pc-footer"><div class="free-chips"><span class="free-chip">HuggingFace Spaces</span><span class="free-chip">Render</span></div><div class="pc-links"><a href="#" class="pc-link ml">GitHub</a></div></div>
       </div>
       -->
-      <div class="project-card ml-card reveal" data-cat="llm" style="border-color:rgba(167,139,250,0.25);border-style:dashed;">
-        <div class="pc-top"><div class="pc-icon">🤖</div><span class="pc-badge pb-wip">In Progress</span></div>
-        <div class="pc-name" style="color:var(--purple)">Custom LLM — From Scratch</div>
-        <div class="pc-desc">Building a transformer-based LLM from the ground up — custom BPE tokenizer, multi-head self-attention, positional encodings, and full PyTorch training loop on domain-specific corpora.</div>
-        <div class="pc-tags"><span class="tag tag-p">Transformers</span><span class="tag tag-p">PyTorch</span><span class="tag tag-p">BPE Tokenizer</span><span class="tag tag-p">Attention</span><span class="tag tag-o">In Progress</span></div>
-        <div class="pc-footer" style="border-color:rgba(167,139,250,0.2)"><div style="font-size:0.67rem;color:var(--purple);letter-spacing:0.06em;">// details dropping soon ✦</div><a href="#" class="pc-link ml">GitHub</a></div>
+      <div class="project-card ml-card reveal" data-cat="llm">
+        <div class="pc-top"><div class="pc-icon">📝</div><span class="pc-badge pb-ml">LLM</span></div>
+        <div class="pc-name" style="color:var(--purple)">Meeting Notes — LLM Summarizer</div>
+        <div class="pc-desc">Turns a meeting transcript into a structured summary, key decisions, and action items via a local LLM with JSON-schema-constrained output. A two-layer verification pass — deterministic owner grounding plus a per-claim LLM self-check — labels each decision and action item as confirmed or flagged for review.</div>
+        <div class="pc-tags"><span class="tag tag-g">React</span><span class="tag tag-c">FastAPI</span><span class="tag tag-c">SQLite</span><span class="tag tag-p">Ollama</span><span class="tag tag-p">Structured Output</span></div>
+        <div class="pc-footer"><div class="free-chips"><span class="free-chip">Vite</span><span class="free-chip">Uvicorn</span></div><div class="pc-links"><a href="https://github.com/gundavarapuindira25-max/meeting-notes" class="pc-link ml" target="_blank" rel="noopener noreferrer">GitHub</a></div></div>
       </div>
     </div>
   </div>
